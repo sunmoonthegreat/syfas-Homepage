@@ -25,7 +25,7 @@
 
   // Fade sections in as they scroll into view
   if ('IntersectionObserver' in window) {
-    var items = document.querySelectorAll('.strength, .service, .person, .office, .about-text, .contact-form');
+    var items = document.querySelectorAll('.strength, .service, .person, .office, .about-text, .contact-form, .news-item');
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
