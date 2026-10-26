@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://syfas.com/sitemap.xml
+
+#DaumWebMasterTool:55528156a1591280e0f29b94bd342fbf59ffa467887ac74fce9dc3ea39a3aee4:dSlZXvWuL7UAVoESNn1QCg==
