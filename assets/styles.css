@@ -286,3 +286,4 @@ img { max-width: 100%; }
 .home-art-sub { margin: 0 0 18px; font-size: 18px; color: var(--navy); }
 .home-art .news-more { margin-bottom: 18px; }
 .art-caution { margin: 16px 0 0; font-size: 14.5px; color: var(--muted); }
+.avatar-gold { background: linear-gradient(135deg, #8a6d2f, var(--gold)); }
