@@ -2,6 +2,7 @@
 
 - 세무뉴스: data/news.json → index.html(NEWS), news.html(NEWS, NEWS-LIST)
 - 정부지원금: data/support.json → index.html(SUPPORT), support.html(SUPPORT, SUPPORT-LIST)
+- 미술품 소식: data/art.json → index.html(ART), art.html(ART, ART-LIST)
 
 새 항목에는 번호(no)가 자동으로 붙고 json 파일에 저장된다. 한 번 붙은 번호는 바뀌지 않는다.
 
@@ -18,6 +19,7 @@ e = html.escape
 FEEDS = [
     {"data": "data/news.json", "marker": "NEWS", "page": "news.html", "anchor": "news", "home": 6},
     {"data": "data/support.json", "marker": "SUPPORT", "page": "support.html", "anchor": "support", "home": 4},
+    {"data": "data/art.json", "marker": "ART", "page": "art.html", "anchor": "art", "home": 3},
 ]
 
 

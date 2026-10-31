@@ -23,9 +23,14 @@
   var year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 
+  // Pre-select the inquiry topic when arriving from a section page (e.g. ?topic=art)
+  var topic = new URLSearchParams(location.search).get('topic');
+  var option = topic && document.querySelector('.contact-form option[data-topic="' + topic + '"]');
+  if (option) option.selected = true;
+
   // Fade sections in as they scroll into view
   if ('IntersectionObserver' in window) {
-    var items = document.querySelectorAll('.strength, .service, .person, .office, .about-text, .contact-form, .news-item');
+    var items = document.querySelectorAll('.strength, .service, .person, .office, .about-text, .contact-form, .news-item, .art-card, .art-step, .art-point');
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
