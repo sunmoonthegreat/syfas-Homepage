@@ -98,9 +98,8 @@ img { max-width: 100%; }
 .people { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .person { border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; background: #fff; }
 .avatar { width: 52px; height: 52px; border-radius: 50%; display: grid; place-items: center; background: linear-gradient(135deg, var(--navy), var(--sky)); color: #fff; font-family: var(--serif); font-size: 20px; margin-bottom: 16px; }
-.person h3 { margin: 0; font-size: 20px; color: var(--navy); }
+.person h3 { margin: 0 0 12px; padding-bottom: 12px; border-bottom: 1px dashed var(--line); font-size: 20px; color: var(--navy); }
 .person h3 span { display: block; font-size: 13px; color: var(--sky); font-weight: 500; margin-top: 2px; }
-.person .edu { font-size: 13.5px; color: var(--muted); margin: 8px 0 12px; padding-bottom: 12px; border-bottom: 1px dashed var(--line); }
 .person ul { margin: 0; padding-left: 18px; font-size: 14.5px; color: #39445a; }
 .person li { margin: 3px 0; }
 
