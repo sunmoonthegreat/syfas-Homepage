@@ -3,6 +3,8 @@
 - 세무뉴스: data/news.json → index.html(NEWS), news.html(NEWS, NEWS-LIST)
 - 정부지원금: data/support.json → index.html(SUPPORT), support.html(SUPPORT, SUPPORT-LIST)
 - 미술품 소식: data/art.json → index.html(ART), art.html(ART, ART-LIST)
+- 미술품 전시 정보(월 1회): data/exhibitions.json → art-exhibitions.html(EXHIBIT, EXHIBIT-LIST)
+- 미술품 거래 · 낙찰 정보(월 1회): data/auctions.json → art-market.html(MARKET, MARKET-LIST)
 
 새 항목에는 번호(no)가 자동으로 붙고 json 파일에 저장된다. 한 번 붙은 번호는 바뀌지 않는다.
 
@@ -20,6 +22,10 @@ FEEDS = [
     {"data": "data/news.json", "marker": "NEWS", "page": "news.html", "anchor": "news", "home": 6},
     {"data": "data/support.json", "marker": "SUPPORT", "page": "support.html", "anchor": "support", "home": 4},
     {"data": "data/art.json", "marker": "ART", "page": "art.html", "anchor": "art", "home": 3},
+    {"data": "data/exhibitions.json", "marker": "EXHIBIT", "page": "art-exhibitions.html", "anchor": "exhibit", "home": 0,
+     "facts": [("장소", "venue"), ("기간", "period")], "extra": "period"},
+    {"data": "data/auctions.json", "marker": "MARKET", "page": "art-market.html", "anchor": "market", "home": 0,
+     "facts": [("경매사", "house"), ("경매일", "sale"), ("결과", "result")]},
 ]
 
 
@@ -33,8 +39,12 @@ def card(item, feed, on_page):
     if not on_page:
         title = f'<a href="{feed["page"]}#{anchor}">{title}</a>'
     facts = ""
+    rows = []
     if "deadline" in item:
         rows = [("신청기한", item["deadline"]), ("신청기관", item["agency"]), ("신청처", item["apply"])]
+    elif "facts" in feed:
+        rows = [(label, item[key]) for label, key in feed["facts"] if item.get(key)]
+    if rows:
         facts = '\n            <dl class="news-facts">' + "".join(
             f'<div><dt>{k}</dt><dd>{e(v)}</dd></div>' for k, v in rows) + "</dl>"
     id_attr = f' id="{anchor}"' if on_page else ""
@@ -49,7 +59,8 @@ def card(item, feed, on_page):
 def archive(items, feed):
     rows = []
     for i in items:
-        extra = f'<span class="arc-deadline">{e(i["deadline"])}</span>' if "deadline" in i else ""
+        key = "deadline" if "deadline" in i else feed.get("extra")
+        extra = f'<span class="arc-deadline">{e(i[key])}</span>' if key and i.get(key) else ""
         rows.append(
             f'            <li><a href="#{feed["anchor"]}-{i["no"]}"><span class="arc-no">{i["no"]}</span>'
             f'<span class="arc-date">{dot(e(i["date"]))}</span><span class="arc-cat">{e(i["category"])}</span>'
@@ -84,7 +95,8 @@ def main():
 
     for feed in FEEDS:
         items = load(feed)
-        itext = fill(itext, feed["marker"], "\n".join(card(i, feed, False) for i in items[:feed["home"]]))
+        if feed["home"]:
+            itext = fill(itext, feed["marker"], "\n".join(card(i, feed, False) for i in items[:feed["home"]]))
 
         page = ROOT / feed["page"]
         ptext = page.read_text(encoding="utf-8")

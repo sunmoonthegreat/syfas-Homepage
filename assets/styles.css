@@ -287,3 +287,46 @@ img { max-width: 100%; }
 .home-art .news-more { margin-bottom: 18px; }
 .art-caution { margin: 16px 0 0; font-size: 14.5px; color: var(--muted); }
 .avatar-gold { background: linear-gradient(135deg, #8a6d2f, var(--gold)); }
+
+/* 미술품 투자지원센터 */
+.nav-menu .nav-art { color: #8a6d2f; font-weight: 700; }
+.nav-menu .nav-art:hover { color: var(--gold); }
+.art-hero-sub .hero-inner { padding-bottom: 70px; }
+.center-tabs { background: #fff; border-bottom: 1px solid var(--line); position: sticky; top: 72px; z-index: 40; }
+.center-tabs-inner { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; }
+.center-tabs-inner::-webkit-scrollbar { display: none; }
+.center-tabs a { flex: 0 0 auto; display: flex; align-items: center; gap: 8px; padding: 16px 18px; text-decoration: none; font-weight: 500; font-size: 15px; color: var(--muted); border-bottom: 3px solid transparent; }
+.center-tabs a span { font-family: var(--serif); font-size: 13px; color: var(--gold); }
+.center-tabs a:hover { color: var(--navy); }
+.center-tabs a[aria-current="page"] { color: var(--navy); font-weight: 700; border-bottom-color: var(--gold); }
+.center-intro { padding-bottom: 0; }
+.center-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 28px; }
+.center-card { display: flex; flex-direction: column; padding: 26px 24px; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; text-decoration: none; transition: box-shadow .2s, transform .2s, border-color .2s; }
+.center-card:hover { border-color: var(--gold); box-shadow: 0 10px 30px rgba(11,35,80,.08); transform: translateY(-2px); }
+.center-card span { font-family: var(--serif); font-size: 22px; color: var(--gold); }
+.center-card h3 { margin: 6px 0 8px; font-size: 18px; color: var(--navy); }
+.center-card p { margin: 0 0 14px; flex: 1; font-size: 14.5px; color: #39445a; }
+.center-card em { font-style: normal; font-size: 14px; font-weight: 500; color: var(--sky); }
+.home-art-section { background: linear-gradient(180deg, #fbf8f1 0%, #fff 100%); border-bottom: 1px solid var(--line); }
+.home-center-links { list-style: none; margin: 0 0 28px; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.home-center-links a { display: flex; align-items: center; gap: 10px; padding: 14px 16px; border: 1px solid var(--line); border-radius: 10px; background: #fff; text-decoration: none; font-weight: 500; color: var(--navy); font-size: 15px; transition: border-color .2s; }
+.home-center-links a:hover { border-color: var(--gold); }
+.home-center-links span { font-family: var(--serif); color: var(--gold); font-size: 14px; }
+.strengths-4 { grid-template-columns: repeat(4, 1fr); }
+.strength-art { border-color: var(--gold); background: linear-gradient(180deg, #fbf8f1, #fff); }
+.strength-art .strength-num { color: var(--gold); }
+.service-art { border-color: var(--gold); }
+.report-points { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-bottom: 30px; }
+.report-points .art-point h3 { margin: 0 0 8px; font-size: 17.5px; color: var(--navy); }
+.report-empty { padding: 40px 20px; text-align: center; border: 1px dashed var(--line); border-radius: var(--radius); color: var(--muted); background: var(--tint); }
+@media (max-width: 960px) {
+  .center-cards, .strengths-4 { grid-template-columns: repeat(2, 1fr); }
+  .report-points { grid-template-columns: 1fr; }
+}
+@media (max-width: 760px) {
+  .center-tabs { position: static; }
+  .center-tabs-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .center-tabs a { padding: 12px 6px; font-size: 14px; }
+  .center-cards, .strengths-4, .home-center-links { grid-template-columns: 1fr; }
+}
+#exhibit .arc-deadline { color: var(--muted); }
