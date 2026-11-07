@@ -24,4 +24,22 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://syfas.com/art-exhibitions.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://syfas.com/art-market.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://syfas.com/art-reports.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
