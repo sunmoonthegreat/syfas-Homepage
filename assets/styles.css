@@ -330,3 +330,4 @@ img { max-width: 100%; }
   .center-cards, .strengths-4, .home-center-links { grid-template-columns: 1fr; }
 }
 #exhibit .arc-deadline { color: var(--muted); }
+.hero-accent { color: var(--gold); font-weight: 700; }
