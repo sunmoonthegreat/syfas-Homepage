@@ -6,7 +6,7 @@
 - `art.html` 미술품 투자지원센터 첫 화면 + (1) 미술품 과세 (서비스, 과세 핵심 정리, 전문가 그룹, 미술품 소식)
 - `art-exhibitions.html` (2) 주요 미술관 전시 정보, 매월 첫째 주 갱신 (`data/exhibitions.json`)
 - `art-market.html` (3) 경매 낙찰 · 거래 정보, 매월 첫째 주 갱신 (`data/auctions.json`)
-- `art-reports.html` (4) 작가 분석 리포트 (대표님이 리포트를 주시면 `REPORTS` 표시 사이에 게시)
+- `art-reports.html` (4) 작가 이야기 목록 (`REPORTS` 표시 사이에 카드 추가), 각 이야기는 `art-story-N.html`
 - `news.html`, `support.html` 세무뉴스 · 정부지원금 전체 목록
 - `data/*.json` + `scripts/build_news.py` 소식 데이터와 페이지 갱신 스크립트
 - `thanks.html` 문의 접수 완료 페이지
