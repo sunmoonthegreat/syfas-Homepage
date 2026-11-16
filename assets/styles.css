@@ -390,3 +390,33 @@ img { max-width: 100%; }
 @media (max-width: 1100px) { .center-cards { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 900px) { .art-hero-compact { padding: 40px 0 36px; } .center-tabs-inner { grid-template-columns: 1fr 1fr 1fr; } }
 @media (max-width: 640px) { .center-cards { grid-template-columns: 1fr; } .center-tabs-inner { grid-template-columns: 1fr 1fr; } }
+
+/* ===== 상속·증여플랜센터 ===== */
+.inherit-hero { background: linear-gradient(135deg, #0a1733 0%, var(--navy) 50%, #1c4440 100%); }
+.inherit-hero::after { background: radial-gradient(circle, rgba(120,190,170,.28), transparent 65%); }
+.inherit-hero .eyebrow { color: #9fd3c2; }
+.nl-keys { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 28px 0; }
+.nl-key { padding: 22px 20px; border-radius: var(--radius); background: var(--navy); color: #fff; }
+.nl-key b { display: block; font-family: var(--serif); font-size: clamp(26px, 3vw, 32px); color: var(--gold); line-height: 1.2; }
+.nl-key strong { display: block; margin: 6px 0 4px; font-size: 15.5px; }
+.nl-key span { font-size: 13.5px; color: #c9d6ea; }
+.nl-summary { margin: 24px 0 8px; padding: 22px 26px; border-left: 4px solid var(--gold); background: #fbf8f1; border-radius: 0 var(--radius) var(--radius) 0; }
+.nl-summary p { margin: 0; }
+.story .nl-summary-title { margin: 0 0 6px; font-weight: 700; color: var(--navy); font-size: 15px; }
+.nl-alert { margin: 18px 0; padding: 18px 22px; border: 1px solid #e3c98f; background: #fffaf0; border-radius: var(--radius); font-size: 15.5px; color: #2b3445; }
+.nl-alert strong { color: #8a5a00; }
+.story .table-wrap { margin: 18px 0 10px; }
+.story .art-table td:last-child { color: inherit; font-size: 15px; }
+.story .art-table td, .story .art-table th { vertical-align: top; }
+.nl-check { list-style: none; padding: 0; margin: 14px 0; }
+.nl-check li { padding: 10px 0 10px 30px; border-top: 1px solid var(--line); position: relative; font-size: 16px; }
+.nl-check li::before { content: "□"; position: absolute; left: 4px; color: var(--navy); }
+.story .nl-point { margin: 10px 0 2px; font-weight: 700; color: var(--navy); font-size: 17px; }
+.nl-consult { margin-top: 40px; padding: 26px 28px; border-radius: var(--radius); background: var(--navy); color: #fff; }
+.story .nl-consult p { color: #dbe4f2; margin: 0 0 14px; }
+.story .nl-consult .nl-consult-title { color: #fff; font-family: var(--serif); font-size: 20px; margin-bottom: 8px; }
+.story .nl-foot { font-size: 13.5px; color: var(--muted); margin-top: 18px; line-height: 1.7; }
+.nl-sources a { color: var(--sky); }
+@media (max-width: 760px) { .nl-keys { grid-template-columns: 1fr; } }
+@media (min-width: 961px) and (max-width: 1280px) { .nav-menu { gap: 16px; } .nav-menu a { font-size: 14px; } .nav-menu .nav-cta { padding: 8px 14px; } }
+@media (min-width: 961px) and (max-width: 1080px) { .nav-menu { gap: 11px; } .nav-menu a { font-size: 13.2px; } .brand-text small { display: none; } }
