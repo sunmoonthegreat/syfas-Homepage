@@ -421,3 +421,18 @@ img { max-width: 100%; }
 @media (min-width: 961px) and (max-width: 1280px) { .nav-menu { gap: 16px; } .nav-menu a { font-size: 14px; } .nav-menu .nav-cta { padding: 8px 14px; } }
 @media (min-width: 961px) and (max-width: 1080px) { .nav-menu { gap: 11px; } .nav-menu a { font-size: 13.2px; } .brand-text small { display: none; } }
 .nl-check li strong { color: var(--navy); margin-right: 6px; }
+
+/* ♥ 좋아요 */
+.like-box { margin: 48px 0 32px; padding: 26px 20px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); text-align: center; }
+.story .like-box .like-text { margin: 0 0 14px; font-size: 15px; color: var(--muted); }
+.like-btn { display: inline-flex; align-items: center; gap: 8px; padding: 11px 26px; border: 1.5px solid var(--line); border-radius: 999px; background: #fff; color: var(--navy); font: inherit; font-size: 15.5px; font-weight: 500; cursor: pointer; transition: border-color .2s, background .2s, color .2s, box-shadow .2s; }
+.like-btn:hover { border-color: #e0607e; box-shadow: 0 6px 18px rgba(224,96,126,.14); }
+.like-btn:focus-visible { outline: 2px solid var(--sky); outline-offset: 2px; }
+.like-heart { font-size: 19px; line-height: 1; color: #c3cad6; transition: color .2s, transform .2s; }
+.like-btn.liked { border-color: #e0607e; background: #fff2f5; color: #c23b5c; }
+.like-btn.liked .like-heart { color: #e0607e; }
+.like-btn.pop .like-heart { animation: like-pop .45s ease; }
+.like-count { min-width: 1ch; font-weight: 700; font-variant-numeric: tabular-nums; }
+.like-count:empty { display: none; }
+@keyframes like-pop { 0% { transform: scale(1); } 40% { transform: scale(1.45); } 100% { transform: scale(1); } }
+@media (prefers-reduced-motion: reduce) { .like-btn.pop .like-heart { animation: none; } }
