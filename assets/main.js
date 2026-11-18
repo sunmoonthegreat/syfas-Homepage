@@ -32,8 +32,8 @@
   // 숫자는 Supabase(supabase/likes.sql)에 저장됩니다.
   // 좋아요는 같은 브라우저에서 한 번만(다시 누르면 취소), 조회수는 같은 브라우저에서 하루 한 번만 올라갑니다.
   var LIKES = {
-    url: '',  // 예: https://abcd1234.supabase.co
-    key: ''   // Supabase의 공개용 키(anon / publishable). 비밀 키(service_role)는 절대 넣지 마세요.
+    url: 'https://qtmonyvtbxtmowkypqro.supabase.co',
+    key: 'sb_publishable_s4oGHYXgTsreeAzo_o5klA_vnu4TLE9'  // 공개용 키(publishable). 비밀 키(secret / service_role)는 절대 넣지 마세요.
   };
   var article = document.querySelector('article.story');
   var slug = (location.pathname.split('/').pop() || '').replace(/\.html$/, '');
@@ -73,7 +73,8 @@
       if (metaView) metaView.textContent = views === null ? '' : ' · 조회 ' + fmt(views);
     };
     var api = function (path, body) {
-      var opts = { headers: { apikey: LIKES.key, Authorization: 'Bearer ' + LIKES.key, 'Content-Type': 'application/json' } };
+      var opts = { headers: { apikey: LIKES.key, 'Content-Type': 'application/json' } };
+      if (!/^sb_/.test(LIKES.key)) opts.headers.Authorization = 'Bearer ' + LIKES.key;
       if (body) { opts.method = 'POST'; opts.body = JSON.stringify(body); }
       return fetch(LIKES.url.replace(/\/$/, '') + '/rest/v1/' + path, opts).then(function (r) {
         if (!r.ok) throw new Error(r.status);
