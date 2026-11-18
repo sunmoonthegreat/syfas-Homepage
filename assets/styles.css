@@ -434,5 +434,8 @@ img { max-width: 100%; }
 .like-btn.pop .like-heart { animation: like-pop .45s ease; }
 .like-count { min-width: 1ch; font-weight: 700; font-variant-numeric: tabular-nums; }
 .like-count:empty { display: none; }
+/* 조회수 */
+.story .like-box .view-count { margin: 12px 0 0; font-size: 13.5px; color: var(--muted); }
+.story .like-box .view-count:empty { display: none; }
 @keyframes like-pop { 0% { transform: scale(1); } 40% { transform: scale(1.45); } 100% { transform: scale(1); } }
 @media (prefers-reduced-motion: reduce) { .like-btn.pop .like-heart { animation: none; } }
