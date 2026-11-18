@@ -10,6 +10,7 @@
 - `news.html`, `support.html` 세무뉴스 · 정부지원금 전체 목록
 - `data/*.json` + `scripts/build_news.py` 소식 데이터와 페이지 갱신 스크립트
 - `thanks.html` 문의 접수 완료 페이지
+- ♥ 좋아요 · 조회수: `assets/main.js`가 `art-story-N.html`, `inherit-newsletter-N.html` 글에 자동으로 버튼을 붙입니다. 좋아요와 조회수(브라우저당 하루 1회)는 Supabase에 저장(`supabase/likes.sql`), 접속 주소와 공개 키는 `main.js`의 `LIKES`에 넣습니다.
 - `assets/` 스타일, 스크립트, 아이콘, 공유 이미지
 - `robots.txt`, `sitemap.xml` 검색포털 등록용
 
