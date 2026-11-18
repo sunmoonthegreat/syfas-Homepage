@@ -8,6 +8,10 @@ create table if not exists public.post_stats (
 
 alter table public.post_stats enable row level security;
 
+-- 새 표 자동 공개를 꺼 두었어도 읽기는 되도록 직접 허용합니다(쓰기 권한은 주지 않음).
+grant usage on schema public to anon, authenticated;
+grant select on public.post_stats to anon, authenticated;
+
 -- 누구나 숫자는 읽을 수 있고, 직접 수정은 못 합니다(아래 함수로만 +1/-1).
 drop policy if exists "anyone can read stats" on public.post_stats;
 create policy "anyone can read stats" on public.post_stats
