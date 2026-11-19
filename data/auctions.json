@@ -1,5 +1,29 @@
 [
   {
+    "no": 8,
+    "date": "2026-11-19",
+    "category": "해외 경매 · 뉴욕",
+    "house": "소더비 (Sotheby's)",
+    "title": "고흐 〈꽃피는 밤나무〉 1억 9,040만 달러, 고흐 작품 경매 최고가",
+    "summary": "고흐가 세상을 떠나기 두 달 전인 1890년 5월 오베르쉬르우아즈에서 그린 〈꽃피는 밤나무(Châtaigniers en fleurs)〉가 수수료 포함 1억 9,040만 달러(약 2,535억 원)에 낙찰됐습니다. 2022년 크리스티 폴 앨런 컬렉션 경매의 〈사이프러스 나무가 있는 과수원〉(1억 1,720만 달러) 기록을 넘어선 고흐 작품 경매 최고가로, 소더비 역사상 두 번째로 비싼 낙찰작입니다. 아르헨티나 블라키에르-아리에타 부부의 소장품으로 1964년 이후 공개된 적이 없던 작품이며, 현장에서 아콰벨라 갤러리의 윌리엄 아콰벨라 대표가 낙찰받았습니다. 해외 경매에서 작품을 사고팔 때도 국내 거주자는 양도 시 기타소득 신고 의무를 함께 살펴야 합니다.",
+    "sale": "2026.11.18 (Blaquier-Arrieta Collection 이브닝 세일, 뉴욕)",
+    "result": "낙찰가 1억 6,500만 달러 · 수수료 포함 1억 9,040만 달러(추정가 약 1억 8,000만 달러)",
+    "source": "The Art Newspaper 「Van Gogh painting sells for record $190m at Sotheby’s following Nazi loot claims」(2026.11.19)",
+    "url": "https://www.theartnewspaper.com/2026/11/19/van-gogh-painting-sells-for-record-7778m-after-nazi-loot-claims"
+  },
+  {
+    "no": 7,
+    "date": "2026-11-19",
+    "category": "해외 경매 · 소유권 분쟁",
+    "house": "소더비 (Sotheby's)",
+    "title": "고흐 그림 ‘나치 박해로 매각’ 이의제기, 경매 하루 전 합의",
+    "summary": "〈꽃피는 밤나무〉는 독일계 유대인 출판인 사무엘 피셔가 1909년 사들인 작품입니다. 피셔 후손들은 나치 시대 재정 압박 때문에 가족이 1936년 암스테르담 화랑을 통해 작품을 팔 수밖에 없었다며 경매 중단을 요구했습니다. 소더비는 경매 하루 전인 11월 17일 현 소장자(블라키에르-아리에타 가문)와 피셔 후손 사이에 합의가 이뤄졌다고 발표했고, 합의 조건은 공개되지 않았습니다. 고가 미술품 거래에서는 가격만큼 소장 이력(프로비넌스) 확인이 중요하다는 점을 보여 준 사례입니다.",
+    "sale": "2026.11.17 합의 발표 (경매 2026.11.18, 소더비 뉴욕)",
+    "result": "합의 후 경매 진행 · 합의 조건 비공개 · 소장 이력: 사무엘 피셔(1909) → 카페러 부부(1936) → 블라키에르-아리에타 가문(1975)",
+    "source": "The National 「Van Gogh painting sells for record $190.4 million after Nazi-era ownership dispute resolved」(2026.11.19)",
+    "url": "https://www.thenationalnews.com/arts-culture/2026/11/19/van-gogh-painting-sells-for-record-1904-million-after-nazi-era-ownership-dispute-resolved/"
+  },
+  {
     "date": "2026-11-07",
     "category": "해외 경매 · 홍콩",
     "title": "소더비 홍콩 9월 이브닝 7억 3,855만 홍콩달러, 나라 요시토모 최고가",
