@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0b2350"/></marker>
+    <marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#b4462d"/></marker>
+  </defs>
+  <rect width="900" height="400" fill="#f5f7fb"/>
+  <text x="450" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#0b2350">특정법인 거래 증여의제의 구조</text>
+  <text x="450" y="64" text-anchor="middle" font-size="14" fill="#5d6879">자녀 등 지배주주 가족 지분이 30% 이상인 법인에 부모가 이익을 넘기는 경우</text>
+  <rect x="40" y="110" width="220" height="120" rx="14" fill="#fff" stroke="#0b2350" stroke-width="2"/>
+  <text x="150" y="150" text-anchor="middle" font-size="19" font-weight="700" fill="#0b2350">부모</text>
+  <text x="150" y="180" text-anchor="middle" font-size="14" fill="#1b2433">무상 · 저리 자금 대여</text>
+  <text x="150" y="204" text-anchor="middle" font-size="14" fill="#1b2433">재산 저가 양도 · 채무 대신 변제</text>
+  <path d="M262,170 L338,170" stroke="#0b2350" stroke-width="3" marker-end="url(#a)"/>
+  <rect x="340" y="110" width="220" height="120" rx="14" fill="#0b2350"/>
+  <text x="450" y="150" text-anchor="middle" font-size="19" font-weight="700" fill="#fff">가족법인</text>
+  <text x="450" y="180" text-anchor="middle" font-size="14" fill="#dbe4f2">법인이 얻은 이익</text>
+  <text x="450" y="204" text-anchor="middle" font-size="14" fill="#c8a96a">(이자 차액 · 시가 차액 등)</text>
+  <path d="M562,170 L638,170" stroke="#b4462d" stroke-width="3" marker-end="url(#r)"/>
+  <rect x="640" y="110" width="220" height="120" rx="14" fill="#fff4f0" stroke="#b4462d" stroke-width="2"/>
+  <text x="750" y="150" text-anchor="middle" font-size="19" font-weight="700" fill="#b4462d">자녀 주주</text>
+  <text x="750" y="180" text-anchor="middle" font-size="14" fill="#1b2433">이익 × 지분율을</text>
+  <text x="750" y="204" text-anchor="middle" font-size="14" fill="#1b2433">증여받은 것으로 봄</text>
+  <rect x="40" y="262" width="820" height="108" rx="14" fill="#fff" stroke="#dde3ec"/>
+  <text x="70" y="298" font-size="15" font-weight="700" fill="#0b2350">과세 요건 (상속세 및 증여세법 제45조의5)</text>
+  <text x="70" y="326" font-size="14" fill="#1b2433">· 주주 1인별 증여의제이익 1억원 이상일 때 과세 · 금전 대여는 적정이자율(4.6%)과의 차이로 이익 계산</text>
+  <text x="70" y="352" font-size="14" fill="#1b2433">· 법인이 낸 법인세 상당액은 한도 계산에 반영 · 서류상 회사로 보이면 부모→자녀 직접 증여로 재구성될 수 있음</text>
+</svg>

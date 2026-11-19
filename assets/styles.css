@@ -439,3 +439,6 @@ img { max-width: 100%; }
 .story .like-box .view-count:empty { display: none; }
 @keyframes like-pop { 0% { transform: scale(1); } 40% { transform: scale(1.45); } 100% { transform: scale(1); } }
 @media (prefers-reduced-motion: reduce) { .like-btn.pop .like-heart { animation: none; } }
+.nl-figure { margin: 24px 0 28px; }
+.nl-figure img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--tint); }
+.nl-figure figcaption { margin-top: 8px; font-size: 13px; color: var(--muted); text-align: center; }
