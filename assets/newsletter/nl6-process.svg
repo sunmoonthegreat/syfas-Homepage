@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#c8a96a"/></marker></defs>
+  <rect width="900" height="470" fill="#f5f7fb"/>
+  <text x="450" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#0b2350">가족법인 설립 6단계</text>
+  <text x="450" y="64" text-anchor="middle" font-size="14" fill="#5d6879">설립 전 설계(1단계)가 세무 리스크의 대부분을 결정합니다</text>
+  <g>
+    <rect x="40" y="96" width="250" height="140" rx="14" fill="#0b2350"/>
+    <circle cx="78" cy="132" r="20" fill="#c8a96a"/><text x="78" y="139" text-anchor="middle" font-size="18" font-weight="700" fill="#0b2350">1</text>
+    <text x="108" y="139" font-size="18" font-weight="700" fill="#fff">구조 설계</text>
+    <text x="62" y="178" font-size="14" fill="#dbe4f2">주주 · 임원 · 지분율 결정</text>
+    <text x="62" y="204" font-size="14" fill="#dbe4f2">자녀 출자금 자금출처 확보</text>
+
+    <rect x="325" y="96" width="250" height="140" rx="14" fill="#fff" stroke="#0b2350" stroke-width="2"/>
+    <circle cx="363" cy="132" r="20" fill="#0b2350"/><text x="363" y="139" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">2</text>
+    <text x="393" y="139" font-size="18" font-weight="700" fill="#0b2350">정관 작성</text>
+    <text x="347" y="178" font-size="14" fill="#1b2433">상호 · 목적사업 · 본점 · 자본금</text>
+    <text x="347" y="204" font-size="14" fill="#1b2433">임원 보수 · 퇴직금 규정</text>
+
+    <rect x="610" y="96" width="250" height="140" rx="14" fill="#fff" stroke="#0b2350" stroke-width="2"/>
+    <circle cx="648" cy="132" r="20" fill="#0b2350"/><text x="648" y="139" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">3</text>
+    <text x="678" y="139" font-size="18" font-weight="700" fill="#0b2350">자본금 납입</text>
+    <text x="632" y="178" font-size="14" fill="#1b2433">주주 각자 자기 계좌에서 납입</text>
+    <text x="632" y="204" font-size="14" fill="#1b2433">잔고증명 · 발기인 조사보고</text>
+
+    <rect x="610" y="290" width="250" height="140" rx="14" fill="#fff" stroke="#0b2350" stroke-width="2"/>
+    <circle cx="648" cy="326" r="20" fill="#0b2350"/><text x="648" y="333" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">4</text>
+    <text x="678" y="333" font-size="18" font-weight="700" fill="#0b2350">설립등기</text>
+    <text x="632" y="372" font-size="14" fill="#1b2433">관할 등기소 신청</text>
+    <text x="632" y="398" font-size="14" fill="#1b2433">등록면허세 · 지방교육세 납부</text>
+
+    <rect x="325" y="290" width="250" height="140" rx="14" fill="#fff" stroke="#0b2350" stroke-width="2"/>
+    <circle cx="363" cy="326" r="20" fill="#0b2350"/><text x="363" y="333" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">5</text>
+    <text x="393" y="333" font-size="18" font-weight="700" fill="#0b2350">사업자등록</text>
+    <text x="347" y="372" font-size="14" fill="#1b2433">사업 개시일부터 20일 이내</text>
+    <text x="347" y="398" font-size="14" fill="#1b2433">업종에 맞는 사업장 확보</text>
+
+    <rect x="40" y="290" width="250" height="140" rx="14" fill="#0b2350"/>
+    <circle cx="78" cy="326" r="20" fill="#c8a96a"/><text x="78" y="333" text-anchor="middle" font-size="18" font-weight="700" fill="#0b2350">6</text>
+    <text x="108" y="333" font-size="18" font-weight="700" fill="#fff">계좌 · 운영</text>
+    <text x="62" y="372" font-size="14" fill="#dbe4f2">법인계좌 개설 · 자본금 이체</text>
+    <text x="62" y="398" font-size="14" fill="#dbe4f2">장부 · 증빙으로 실제 사업 운영</text>
+  </g>
+  <g stroke="#c8a96a" stroke-width="3" fill="none" marker-end="url(#a)">
+    <path d="M292,166 L321,166"/><path d="M577,166 L606,166"/>
+    <path d="M735,238 L735,286"/>
+    <path d="M608,360 L579,360"/><path d="M323,360 L294,360"/>
+  </g>
+</svg>
